@@ -1,0 +1,9 @@
+/* Instructions: Style the website you made last week using CSS with the following requirements:
+
+    Use only external CSS file (no internal or inline styling)
+    Every element must be styled.
+    Create style rules using class, id, and element selectors.
+
+Before beginning the styling process, I adjusted some of the tags in the HTML.
+Specifically, I added a main element to each page, removed inline styling, and made the sections with links nav instead.
+I also added class and id tags to certain paragraph elements and all images to make it easier to select them individually.

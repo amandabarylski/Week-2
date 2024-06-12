@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attributes</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--For this page, I placed a title header before any sections begin.-->
+    <main>
+            <!--For this page, I placed a title header before any sections begin.-->
     <h1>What Makes Each Aether Well Unique?</h1>
     <!--I placed the table in the same section as the corresponding header and paragraph to keep it organized.-->
     <section>
@@ -24,62 +26,67 @@
             dangerous areas are suspected of having a fire-aligned aether well.</p>
         <!--When making the table, I wanted it to look like a table, so I set the border to 1 to delineate between the
         rows and columns.-->
-        <table border="1">
-            <tr>
-                <th>Affinity</th>
-                <th>Phenomena</th>
-                <th>Example</th>
-            </tr>
-            <tr>
-                <td>Light</td>
-                <td>Illusions, illumination</td>
-                <td>The Darksun, Kyrr-Eretan Republic</td>
-            </tr>
-            <tr>
-                <td>Water</td>
-                <td>Endless springs/flooding, cold</td>
-                <td>Altir's Well, Amiira</td>
-            </tr>
-            <tr>
-                <td>Fire</td>
-                <td>Extreme heat, combustion</td>
-                <td>None confirmed</td>
-            </tr>
-            <tr>
-                <td>Wind</td>
-                <td>Floating objects, endless storms</td>
-                <td>Maelstrom's Deep, neutral portion of the Ilaric Ocean</td>
-            </tr>
-            <tr>
-                <td>Green</td>
-                <td>Quick growth, parasitism/symbiotism of plants and animals</td>
-                <td>The Heart of the Woods, Abdurehn</td>
-            </tr>
-            <tr>
-                <td>Speaking</td>
-                <td>Universal language, talking animals</td>
-                <td>Glade of Souls, Noverris</td>
-            </tr>
-            <tr>
-                <td>Shifting</td>
-                <td>Lycanthropy, unnatural metamorphosis</td>
-                <td>Silent Sanctuary, Tiravahs Union</td>
-            </tr>
-            <tr>
-                <td>Electricity</td>
-                <td>Lightning strikes, increased speed and strength of organisms</td>
-                <td>Stormfinger, Lutatan</td>
-            </tr>
-            <tr>
-                <td>Healing</td>
-                <td>Rapidly repaired injuries, extended lifespan of organisms</td>
-                <td>None confirmed</td>
-            </tr>
-            <tr>
-                <td>Warding</td>
-                <td>Barriers, shutting down or reversal of other magic</td>
-                <td>Mages' Bane, Nivanye</td>
-            </tr>
+        <!--When starting the CSS stylesheet, I removed the inline styling here.-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Affinity</th>
+                    <th>Phenomena</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Light</td>
+                    <td>Illusions, illumination</td>
+                    <td>The Darksun, Kyrr-Eretan Republic</td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td>Endless springs/flooding, cold</td>
+                    <td>Altir's Well, Amiira</td>
+                </tr>
+                <tr>
+                    <td>Fire</td>
+                    <td>Extreme heat, combustion</td>
+                    <td>None confirmed</td>
+                </tr>
+                <tr>
+                    <td>Wind</td>
+                    <td>Floating objects, endless storms</td>
+                    <td>Maelstrom's Deep, neutral portion of the Ilaric Ocean</td>
+                </tr>
+                <tr>
+                    <td>Green</td>
+                    <td>Quick growth, parasitism/symbiotism of plants and animals</td>
+                    <td>The Heart of the Woods, Abdurehn</td>
+                </tr>
+                <tr>
+                    <td>Speaking</td>
+                    <td>Universal language, talking animals</td>
+                    <td>Glade of Souls, Noverris</td>
+                </tr>
+                <tr>
+                    <td>Shifting</td>
+                    <td>Lycanthropy, unnatural metamorphosis</td>
+                    <td>Silent Sanctuary, Tiravahs Union</td>
+                </tr>
+                <tr>
+                    <td>Electricity</td>
+                    <td>Lightning strikes, increased speed and strength of organisms</td>
+                    <td>Stormfinger, Lutatan</td>
+                </tr>
+                <tr>
+                    <td>Healing</td>
+                    <td>Rapidly repaired injuries, extended lifespan of organisms</td>
+                    <td>None confirmed</td>
+                </tr>
+                <tr>
+                    <td>Warding</td>
+                    <td>Barriers, shutting down or reversal of other magic</td>
+                    <td>Mages' Bane, Nivanye</td>
+                </tr>
+            </tbody>
         </table>
     </section>
     <!--Without a line break, the horizontal line felt too close to the bottom of the table.-->
@@ -94,7 +101,7 @@
             and "corrupted" Heart of the Woods based on a description given by Dr. Altemintha Xalsh.</p>
         <!--I wanted the image to be closer to where it was referred to, so I placed it in the middle of the section in
         between two paragraphs.-->
-        <img src="Images/Heart of the Woods.jpg" height="300" alt="An artist's depiction of the Heart of the Woods, with
+        <img id="heart-of-the-woods" src="Images/Heart of the Woods.jpg" alt="An artist's depiction of the Heart of the Woods, with
         the image on the left in its rotting, brown state and the image on the right in its verdant, green state.">
         <p>Despite the change in appearance, with the Rot being much less pleasant to look at, the Verdance is no less 
             aggressive in spreading and in consuming anything that is not symbiotic with it. Most of the changes are 
@@ -103,17 +110,18 @@
             still subjective. Do not consider an aether well safe simply because it is "pure."</p>
     </section>
     <hr />
-    <section>
+    <nav>
         <h2>Links</h2>
         <a href="index.html">Home</a> <br>
         <a href="Attributes.html">Top</a> <br>
         <a href="Tips.html">Tips</a> <br>
         <a href="Contact.html">Contact</a>
-    </section>
+    </nav>
     <hr />
     <!--I copied and pasted the footer as well as the links from the home page.-->
     <footer>
-        <p>Copyright Vayar Research Institute M.E. 1171</p>
+        <p class="bolded">Copyright Vayar Research Institute M.E. 1171</p>
     </footer>
+    </main>
 </body>
 </html>

@@ -13,11 +13,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!--I wanted to have an image at the top of the screen as a banner topping the website, so I set the width to 100%.-->
-    <img src="Images/Aether.jpg" width="100%" alt="Artist's rendition of aether streams, black lines with white edges">
-    <!--Below the banner, I have added a heading and a horizontal line as a main title of the website-->
+    <img id="banner" src="Images/Aether.jpg" alt="Artist's rendition of aether streams, black lines with white edges">
+    <main>
+            <!--Below the banner, I have added a heading and a horizontal line as a main title of the website-->
     <h1>Vayar Research Institute Presents: The Basics of Aether Wells</h1>
     <hr />
     <!--To remain organized, I grouped the information into sections, each with its own header.-->
@@ -48,23 +50,24 @@
             the Doreinaiika Tree. If you find one, report it to your nearest research center immediately and do not utilize 
             it. Usage causes external aether poisoning and prolonged exposure may be deadly. However, separation from the 
             object will cause symptoms to decrease and eventually vanish.</p>
-        <img src="Images/Well Artifact.jpg" width="400" alt="Artist's rendition of a round fruit shaped medallion made of a dark metal.">
+        <img id="well-artifact" src="Images/Well Artifact.jpg" alt="Artist's rendition of a round fruit shaped medallion made of a dark metal.">
     </section>
     <hr />
     <!--For the "Links" section, I renamed the index link "Top" as it would bring the user to the top of the page. I copied
     and pasted the section into the other two pages, renaming the links accordingly. I also added line breaks so that it
     would look cleaner.-->
-    <section>
+    <nav>
         <h2>Links</h2>
         <a href="index.html">Top</a> <br>
         <a href="Attributes.html">Attributes</a> <br>
         <a href="Tips.html">Tips</a> <br>
         <a href="Contact.html">Contact</a>
-    </section>
+    </nav>
     <hr />
     <!--While a copyright footer is helpful for a real web page, I admit to adding this one because I thought it was funny.-->
     <footer>
-        <p>Copyright Vayar Research Institute M.E. 1171</p>
+        <p class="bolded">Copyright Vayar Research Institute M.E. 1171</p>
     </footer>
+    </main>
 </body>
 </html>
