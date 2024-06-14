@@ -6,4 +6,214 @@
 
 Before beginning the styling process, I adjusted some of the tags in the HTML.
 Specifically, I added a main element to each page, removed inline styling, and made the sections with links nav instead.
-I also added class and id tags to certain paragraph elements and all images to make it easier to select them individually.
+I also added class and id tags to certain paragraph elements and all images to make it easier to select them individually. */
+
+/*I selected everything to change the font family to one that I found easier to read.*/
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*I set a darker background color on the body section as it's what I prefer.*/
+body {
+    background-color: rgb(39, 57, 99);
+}
+
+/*I didn't want to go through and delete all the horizontal lines in the HTML files, but they didn't look right on the
+styled page so I set their display to none.*/
+hr {
+    display: none;
+}
+
+/*For the top image, I gave it the id "banner" and set its width to 100% so it would grow and shrink with the size
+of the browser window.*/
+#banner {
+    width: 100%;
+}
+
+/*To keep the important part of the webpage closer to the center, I set a left and right margin for the main part.*/
+main {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+/*I centered h1, giving it a lighter text color with a dark shadow. I also gave it some top padding to push the heading
+on the home page further away from the banner image.*/
+h1 {
+    text-align: center;
+    color: #a986b3;
+    text-shadow: rgb(47, 17, 57) 2px 2px 5px;
+    padding-top: 1em;
+}
+
+/*I outlined the sections with a dark border and gave them top and bottom margins to separate them from each other.*/
+section {
+    border: solid rgb(47, 17, 57) 5px;
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/*For h2, I copied the center alignment and text color and shadow from h1, but these headings didn't need padding.*/
+h2 {
+    text-align: center;
+    color: #a986b3;
+    text-shadow: rgb(47, 17, 57) 2px 2px 5px;
+}
+
+/*I left-aligned the paragraph texts for readability, and gave them margins to push them away from the colored border
+of the sections. I gave the text a lighter color that contrasts with the background.*/
+p {
+    text-align: left;
+    margin-left: 2em;
+    margin-right: 2em;
+    color: rgb(204, 188, 139);
+}
+
+/*I placed the images and paragraphs I wanted next to each other into divs that I gave a class titled "side-by-side" and
+set the display to flex, which placed them in the same line.*/
+.side-by-side {
+    display:flex
+}
+
+/*For the images in these divs, I wanted to ensure they did not exceed half the screen. I also set a max height, as the
+smaller image did not look right taking up half of the space available. I gave these images padding to push them away
+from the colored border, and set the margin to auto so that if they were in their own line they would move to the center
+of the page instead of staying on the side.*/
+div>img {
+    max-width: 50%;
+    max-height: 400px;
+    padding: 6px;
+    margin: auto;
+}
+
+/*I put the paragraphs I wanted bolded in a class and changed the font weight and text alignment to bold them and place
+them in the center of the page.*/
+.bolded {
+    font-weight: bold;
+    text-align: center;
+}
+
+/*I gave the nav section a bottom margin to push it away from the footer and centered the text.*/
+nav {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+/*I changed the color of the links to a brighter color and gave them padding to separate them.*/
+a {
+    color: aquamarine;
+    padding: 5px;
+}
+
+/*I brightened the color for visited links as well as the default purple was too dark to see clearly on the dark background.*/
+:visited {
+    color: mediumorchid;
+}
+
+/*To visually separate the footer from the rest of the page, I gave it a top border.*/
+footer {
+    border-top: solid rgb(47, 17, 57) 5px;
+}
+
+/*I set the table margin to auto to center it, and added an additional bottom margin so it didn't sit directly on the
+section border. I gave it a lighter background color with a darker border that I collapsed.*/
+table {
+    margin: auto;
+    margin-bottom: 1em;
+    background-color: #a986b3;
+    border-style: solid;
+    border-collapse: collapse;
+    border-width: 5px;
+    border-color: rgb(47, 17, 57);
+    border-radius: 3px;
+}
+
+/*I gave the table head text a dark blue color better match the blue background of the webpage while still standing out
+against the table background.*/
+thead {
+    color: rgb(24, 35, 55);
+}
+
+/*I added padding inside the table head cells to separate the text from the border.*/
+table th {
+    padding: 2px;
+}
+
+/*I gave the table body a darker background color with a lighter text color to distinguish it from the table header.*/
+tbody {
+    background-color: rgb(47, 17, 57);
+    color: rgb(130, 148, 188);
+}
+
+/*To give the table internal borders, I gave the cells borders. I also added padding for readability.*/
+table td {
+    padding: 2px;
+    border-style: solid;
+    border-color: #a986b3;
+}
+
+/*I used a left margin to push the list further from the left side of the screen without fully centering it. As the
+bottom bullet point was too close to the border, I added padding. I also had to change the color, selecting the same
+color as I did for the paragraph text.*/
+ul {
+    margin-left: 5em;
+    padding-bottom: 1em;
+    color: rgb(204, 188, 139);
+}
+
+/*To make the bullet points themselves more distinctive, I applied a different light color to them.*/
+li::marker {
+    color: rgb(130, 148, 188);
+}
+
+/*I wanted the list with shorter items centered below the heading, so I gave it a separate id and set the display to
+table so that I could use margin: auto to center it. I also changed the bullet points to squares.*/
+#symptoms {
+    display: table;
+    margin: auto;
+    list-style-type: square;
+}
+
+/*To push the form itself into the center of the page while leaving the elements left-aligned, I set the display type
+to table and the margin to auto. I gave it the same lighter text color that I've used throughout the website.*/
+form {
+    display: table;
+    margin: auto;
+    color: rgb(204, 188, 139);
+}
+
+/*For the input boxes, I wanted the background color to be light blue, and gave them a dark purple border that matches
+other elements. I gave them padding to make the text area more distinct.*/
+input {
+    background-color: rgb(130, 148, 188);
+    color: rgb(24, 35, 55);
+    padding: 5px;
+    border: rgb(47, 17, 57) solid;
+    border-radius: 3px;
+}
+
+/*I looked up instructions on how to make checkboxes as the HTML defaults are extremely difficult to override. Then I
+was able to set my desired colors to match what I have used on the rest of the website.*/
+
+
+/*I wanted the submit button centered, and a different color from the other input types, so I selected it and applied
+my desired colors. To center it I set the display to block and the margin to auto.*/
+input[type=submit] {
+    background-color: rgb(47, 17, 57);
+    color: #a986b3;
+    padding: 5px;
+    border: #a986b3 solid;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+}
+
+/*As the text and images in the side-by-side sections would squash irregularly on narrower screens, I used a
+media query to make it wrap.*/
+@media only screen and (max-width: 1100px) {
+    .side-by-side {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+    }
+}
