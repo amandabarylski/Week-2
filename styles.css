@@ -192,18 +192,81 @@ input {
     border-radius: 3px;
 }
 
-/*I looked up instructions on how to make checkboxes as the HTML defaults are extremely difficult to override. Then I
-was able to set my desired colors to match what I have used on the rest of the website.*/
+/*For the following section, I began by following W3Schools' tutorial to alter the HTML and make it possible to create my
+own checkmarks, then copying and pasting the CSS rather than risking mistyping sections. I then altered elements to fit
+the sizing, positioning, and coloring needs that I had. Most notably, I wanted solid borders when unchecked, I wanted
+the text size to fit the rest of my website, and I had to shrink the checkboxes and adjust their positioning to match
+the smaller text.
+Location of the tutorial is https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox and it was
+helpful, though I had to look up user-select and transform sections as it was demonstrating the functional code
+rather than explaining the meaning. I then removed the user-select: none lines as they didn't seem necessary for this
+particular list, though the text can still be clicked to mark the checkbox.*/
 
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #a986b3;
+    border: rgb(47, 17, 57) solid 3px;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: rgb(47, 17, 57);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(204, 188, 139);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 
 /*I wanted the submit button centered, and a different color from the other input types, so I selected it and applied
-my desired colors. To center it I set the display to block and the margin to auto.*/
+my desired colors. To center it I set the display to block and the margin to auto. After working on the checkmarks,
+I decided to change the cursor to a pointer here as I didn't realize before that I could do that.*/
 input[type=submit] {
     background-color: rgb(47, 17, 57);
     color: #a986b3;
     padding: 5px;
     border: #a986b3 solid;
     border-radius: 3px;
+    cursor: pointer;
     display: block;
     margin: auto;
 }
